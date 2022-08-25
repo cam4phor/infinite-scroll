@@ -1,0 +1,21 @@
+.post{
+	margin: 1rem 0.2rem;
+	width: 18rem;
+	height: 18rem;
+}
+.post__image-div{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.post__image{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.post__by-div{
+	width: 100%;
+	height: auto;
+}
