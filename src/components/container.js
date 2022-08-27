@@ -17,8 +17,10 @@ const Container = () => {
 	const loadNext = () => {
 		setPostsArray(pA => {
 			let cPA = []
-			if(pageNumber > 0){
-				cPA = pA.slice(-Constants.pageSize)
+			if(pageNumber > 1){
+				cPA = pA.slice(-Constants.pageSize*2)
+			}else{
+				cPA = pA.slice()
 			}
 			for (let i = 0; i < Constants.pageSize; i++){
 				const objCopy = {...obj, index: pageNumber*Constants.pageSize + i}
